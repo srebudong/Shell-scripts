@@ -39,7 +39,7 @@ function renew_uuid {
   systemd-machine-id-setup
 }
 
-[ $# -ne 3 ] && echo -e "Usage: $0 ip/prefix gateway dns\nExample: $0 192.168.0.10/24 192.168.0.254 8.8.8.8" && exit 1
+[ $# -ne 4 ] && echo -e "Usage: $0 ip/prefix gateway dns\nExample: $0 192.168.0.10/24 192.168.0.254 8.8.8.8" && exit 1
 
 ipaddr=$1
 prefix=$2
